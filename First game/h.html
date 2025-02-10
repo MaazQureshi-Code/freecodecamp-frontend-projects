@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Game</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+
+        body{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        #game{
+            display: block;
+            max-width: 500px;
+            max-height: 400px;
+            background-color: bisque;
+            margin: 30px auto 0px;
+         padding: 10px;
+        }
+        #stats{
+            border: 4px solid black;
+            height: 20px;
+            padding-top: 10px;
+            padding-left: 5px;
+        }
+       div span{
+        margin-right: 5px;
+       }
+       span strong{
+        padding-left: 5px;
+       }
+
+       #controls{
+        padding-left: 2px;
+        margin-left: 2px;
+        margin-top: 5px;
+        border: 2px solid;
+        height: 30px;
+       }
+
+       button{
+        margin-right: 5px;
+        background-color: rgb(46, 60, 60);
+        border-radius: 10%;
+        margin-top: 5px;
+        color: aliceblue;
+        font-weight: lighter;
+       }
+
+       #monsterStats{
+        /*  we use display none to hide some thing in html or makeing website  */
+        display: none;
+        background-color: red;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border: 2px solid;
+        height: 25px;
+       }
+       
+
+       #monsterName{
+        margin-right: 70px;
+       }
+
+       #text{
+        background-color: rgb(46, 44, 44);
+        color: aliceblue;
+        text-align: justify;
+        padding: 10px;
+        margin-top: 10px;
+
+          
+
+       }
+
+
+       
+
+    </style>
+</head>
+<body>
+
+    <div id="game">
+        <div id="stats">
+            <span class="state">Xp: <Strong><span id="xpText">0</span></Strong></span>
+            <span class="state">Health <strong><span id="healthText">100</span></strong></span>
+            <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+        </div>
+        <div id="controls">
+            <button id="button1">Go to store</button>
+            <button id="button2">Go to cave</button>
+            <button id="button3">Fight dragon</button>
+        </div>
+        <div id="monsterStats">
+            <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+            <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+          </div>
+          <div id="text">
+            Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
+          </div>
+    </div>
+    <script src="./scripte.js"></script>
+</body>
+</html>
