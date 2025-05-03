@@ -1,0 +1,139 @@
+
+* {
+    box-sizing: border-box;
+  }
+body{
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(100deg, #3b4659 50%, #295ebb 90%);
+}
+
+h1{
+    font-size: 2.5rem;
+   font-family: monospace;
+   font-style: oblique;
+   font-weight: 900;
+   animation: fadeIn 10s ease-in-out infinite;
+}
+
+@keyframes  fadeIn {
+    0% {
+        transform: translateY(0);
+        box-shadow: 2px 2px 2px 2px  #295ebb;
+      }
+      50% {
+        transform: translateY(-10px);
+        box-shadow: 2px 2px 2px 2px  #295ebb;
+      }
+      100% {
+        transform: translateY(0);
+        box-shadow: 2px 2px 2px 2px  #295ebb;
+      }
+    
+}
+
+.input-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-in-out;
+  }
+
+  .input-container label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .input-container .number-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+  }
+
+
+
+.input-container .convert-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #ff6f61;
+    color: #0f0e0e;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease,transform 2s ease-in-out;
+  }
+
+  
+
+  
+button:hover{
+    box-shadow: 0px 2px 4px blanchedalmond;
+    transform: translateX(10px);
+    background: #33b661;
+}
+  
+#output-container{
+    border: 1px solid rgb(225, 216, 216);
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+    color: #e1d8d8;
+    font-weight: 900;
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hidden{
+    display: none;
+}
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
+
+  @keyframes stackAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
